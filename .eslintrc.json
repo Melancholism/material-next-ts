@@ -1,0 +1,24 @@
+{
+	"extends": [
+		"prettier",
+		"plugin:@tanstack/eslint-plugin-query/recommended",
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended",
+		"next",
+		"next/core-web-vitals"
+	],
+	"plugins": ["mui-unused-classes", "@tanstack/query", "@typescript-eslint"],
+	"parser": "@typescript-eslint/parser",
+	"rules": {
+		"react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
+		"arrow-body-style": 2,
+		"@typescript-eslint/no-explicit-any": 0,
+		"react/function-component-definition": [
+			2,
+			{
+				"namedComponents": "arrow-function",
+				"unnamedComponents": "arrow-function"
+			}
+		]
+	}
+}
